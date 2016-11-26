@@ -1,0 +1,72 @@
+﻿body{
+	font-family: Arial, sans-serif;
+	animation: city 60s linear infinite;
+    -webkit-animation: city 60s linear infinite;
+}
+body[bg=a]{
+	background: url(../img/bg.png) repeat-x 0 100% fixed, linear-gradient(to top, #6090b1, #005e8c) fixed;
+}
+body[bg=b]{
+	background: url(../img/bg.png) repeat-x 0 100% fixed, linear-gradient(to top, #4070b1, #101050) fixed;
+}
+@keyframes city {
+    from { background-position: -2000px 100%, 0 0;}
+    to { background-position: 0 100%, 0 0; }
+   }
+   @-webkit-keyframes city {
+    from { background-position: -2000px 100%, 0 0;}
+    to { background-position: 0 100%, 0 0; }
+   }
+.wrapper{
+	padding: 10px;
+	max-width: 1000px;
+	margin: auto;
+	background-color: rgba(240, 240, 240, 0.5);
+}
+input {
+	outline:none;
+}
+#res{
+	outline:none;
+	padding:6px 10px;
+	border-radius:5px;
+	border:2px solid #005;
+	width:169px;
+	height:15px;
+	cursor: text;
+	background-color: #fff;
+}
+div {
+	margin:10px 0;
+	text-align:center;
+}
+
+	div label {
+		margin:0 10px 0 0;
+	}
+
+	div input[type=text] {
+		padding:6px 10px;
+		border-radius:5px;
+		border:2px solid #005;
+	}
+	
+	div input[type=button] {
+		padding:6px 10px;
+		border-radius:5px;
+		font-size:16px;
+		border:2px solid #005;
+		cursor:pointer;
+		background-color:#ccf;
+	}
+select{
+	outline:none;
+	border-radius:5px;
+	border:2px solid #005;
+	font-weight:700;
+}
+option{
+	outline:none;
+	background-color: #eef; 
+	font-weight:700;
+}
