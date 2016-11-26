@@ -10,7 +10,10 @@
 		<script src="js/sound.js"></script>
 		<script>
 			error = "NO_INTERNET_CONNECTION";
-			hint = $("<div class='flipInX animated'>ERROR: HR_"+error+"_ERROR</div>").appendTo(".wrapper");
+			hint = $("<div class='flipInX animated'>ERROR: HR_"+error+"_ERROR</div>");
+			function show_hint(){
+				$(".wrapper").appendChild(hint);
+			}
 		</script>
         <meta charset="utf-8">
         <link rel="stylesheet" href="css/animate.css" type="text/css">
