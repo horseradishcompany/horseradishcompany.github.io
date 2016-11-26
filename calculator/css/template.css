@@ -65,6 +65,10 @@ select{
 	border:2px solid #005;
 	font-weight:700;
 }
+opgroup{
+	background-color: #aab; 
+	font-weight:900;
+}
 option{
 	outline:none;
 	background-color: #eef; 
