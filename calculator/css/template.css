@@ -65,7 +65,7 @@ select{
 	border:2px solid #005;
 	font-weight:700;
 }
-opgroup{
+optgroup{
 	background-color: #aab; 
 	font-weight:900;
 }
