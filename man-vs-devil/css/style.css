@@ -25,6 +25,13 @@ body{
 .container{
 	text-align: center;
 	padding-top: 170px;
+	color: #fff;
+	font-size: 2rem;
+	cursor: default;
+	user-select: none;
+	-ms-user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
 }
 .download{
 	background-color: #0b0;
@@ -44,7 +51,6 @@ body{
 	padding-right: 0.5rem;
 	font-family: monospace;
 	font-weight: 900;
-	border: 1px solid transparent;
 }
 .download:hover{
 	text-decoration: underline;
