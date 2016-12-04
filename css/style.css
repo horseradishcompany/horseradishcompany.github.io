@@ -17,7 +17,7 @@ body{
 	text-align: center;
 }
 .demo{
-	background: url("..\mav-vs-devil/screen.png") no-repeat center center;
+	background: url("../man-vs-devil/screen.png") no-repeat center center;
 	width: 677px;
 	height: 343px;
 	margin: auto;
