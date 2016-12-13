@@ -37,9 +37,8 @@ body{
 	color: #440;
 	text-decoration: none;
 }
-.item:visited::before{
-	content: "*";
-	color: #0f0;
+.item:visited{
+	color: #404;
 }
 .item:hover{
 	color: #444;
