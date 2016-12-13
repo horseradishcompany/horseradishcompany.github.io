@@ -1,4 +1,4 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 html{
     height: 100%;
 }
@@ -32,6 +32,22 @@ body{
 	-ms-user-select: none;
 	-moz-user-select: none;
 	-webkit-user-select: none;
+}
+.item{
+	color: #440;
+	text-decoration: none;
+}
+.item:visited::before{
+	content: "*";
+	color: #0f0;
+}
+.item:hover{
+	color: #444;
+	text-decoration: underline;
+}
+.item:active{
+	color: #400;
+	text-decoration: underline;
 }
 .download{
 	background-color: #0b0;
