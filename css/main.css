@@ -192,6 +192,5 @@ a.home-button{
 a.home-button:hover{
     background-position: 0px -49px;
 }
-::selection{
-	
+@media only screen and (max-device-width:1024px){.slide{background-attachment:scroll;}
 }
