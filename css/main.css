@@ -71,6 +71,40 @@ h3 {
     color: #fff;
     text-align: center;
 }
+.preloader-container{
+background: #000;
+overflow: hidden;
+position: fixed;
+left: 0;
+top: 0;
+right:0;
+bottom:0;
+z-index: 100000;
+}
+.preloader {
+animation: preloader-animation 4s infinite ease;
+color: #f80;
+font-size: 2rem;
+text-align: center;
+height: 50px;
+width: 150px;
+position: absolute;
+left: 50%;
+margin-left: -75px;
+top: 50%;
+margin-top: -25px;
+}
+@keyframes preloader-animation{
+0%{
+transform: rotate(0);
+}
+50%{
+transform: rotate(180deg);
+}
+100%{
+transform: rotate(360deg);
+}
+}
 .slide {
 	position: relative;
 	background-attachment: fixed;

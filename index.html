@@ -10,6 +10,18 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	<body>
+		<div class="preloader-container">
+			<div class="preloader">Loading...</div>
+		</div>
+		<script src="js/jquery-3.2.1.min.js"></script>
+		<script>
+		$(window).on('load', function () {
+		$preloader = $('.preloader-container'),
+		$loader = $preloader.find('.preloader');
+		$loader.fadeOut();
+		$preloader.delay(350).fadeOut('slow');
+		});
+		</script>
 		<a href="#home" class="home-button"></a>
 		<div class="slide slide-start" id="home">
 		</div>
