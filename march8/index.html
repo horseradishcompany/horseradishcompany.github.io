@@ -4,53 +4,7 @@
 		<meta name="theme-color" content="#344148" />
 		<meta charset="utf-8" />
 		<title>С 8 Марта!</title>
-		<style>
-			body {
-				background: #344148;
-				font-family: Ubuntu, Arial, sans-serif;
-			}
-			.message {
-				color: #eadebd;
-				text-shadow: 0 0 4px #000;
-				font-size: 128px;
-				position: absolute;
-				left: 50%;
-				top: 50%;
-				transform: translate(-50%, -50%);
-			}
-			.heart-container {
-				position: absolute;
-				top: 0;
-				left: 0;
-				width: 100%;
-				height: 100%;
-				overflow: hidden;
-			}
-			.heart {
-				z-index: -1;
-				display: block;
-				position: absolute;
-				top: 50%;
-				left: 50%;
-				transform: translate(-50%, -50%);
-				animation: 1s heart ease-in-out infinite;
-			}
-			@keyframes heart {
-				0% {
-					transform: translate(-50%, -50%) scale(1);
-				}
-				25% {
-					transform: translate(-50%, -50%) scale(0.5);
-				}
-				100% {
-					transform: translate(-50%, -50%) scale(1);
-				}
-			}
-			.eight {
-				color: #bc70a4;
-				font-weight: 800;
-			}
-		</style>
+		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
 		<div class="heart-container">
@@ -62,6 +16,11 @@
 		</div>
 		<div class="message">
 			С <span class="eight">8</span> Марта!
+		</div>
+		<div class="footer-container">
+			<div class="footer">
+				Copyright &copy; 2019, Equaraphanus.
+			</div>
 		</div>
 	</body>
 </html>
