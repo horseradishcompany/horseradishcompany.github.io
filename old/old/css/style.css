@@ -1,0 +1,74 @@
+﻿@charset "utf-8";
+html{
+    height: 100%;
+}
+body{
+	background-color: #ccc;
+	overflow: auto;
+	font-family: Arial, sans-serif;
+}
+.wrapper{
+	background-color: #eee;
+	padding: 1rem;
+	max-width: 900px;
+	margin: auto;
+	border-radius: 5px;
+	box-shadow: 10px 10px 20px #888;
+	text-align: center;
+}
+.demo{
+	background: url("../man-vs-devil/screen.png") no-repeat center center;
+	width: 677px;
+	height: 343px;
+	margin: auto;
+}
+.container{
+	text-align: center;
+	padding-top: 170px;
+	color: #fff;
+	font-size: 2rem;
+	cursor: default;
+	user-select: none;
+	-ms-user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+}
+.item{
+	color: #440;
+	text-decoration: none;
+}
+.item:visited{
+	color: #404;
+}
+.item:hover{
+	color: #444;
+	text-decoration: underline;
+}
+.item:active{
+	color: #400;
+	text-decoration: underline;
+}
+.download{
+	background-color: #0b0;
+	color: #eee;
+	cursor: pointer;
+	user-select: none;
+	-ms-user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	text-decoration: none;
+	border-radius: 0.5rem;
+	width: 3rem;
+	height: 1.5rem;
+	font-size: 3rem;
+	padding: 0.25rem;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+	font-family: monospace;
+	font-weight: 900;
+}
+.download:hover{
+	text-decoration: underline;
+	background-color: #080;
+	color: #efe;
+}

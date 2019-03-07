@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="theme-color" content="#344148" />
+		<meta charset="utf-8" />
+		<title>С 8 Марта!</title>
+		<style>
+			body {
+				background: #344148;
+				font-family: Ubuntu, Arial, sans-serif;
+			}
+			.message {
+				color: #eadebd;
+				text-shadow: 0 0 4px #000;
+				font-size: 128px;
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%, -50%);
+			}
+			.heart-container {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				overflow: hidden;
+			}
+			.heart {
+				z-index: -1;
+				display: block;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				animation: 1s heart ease-in-out infinite;
+			}
+			@keyframes heart {
+				0% {
+					transform: translate(-50%, -50%) scale(1);
+				}
+				25% {
+					transform: translate(-50%, -50%) scale(0.5);
+				}
+				100% {
+					transform: translate(-50%, -50%) scale(1);
+				}
+			}
+			.eight {
+				color: #bc70a4;
+				font-weight: 800;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="heart-container">
+			<svg class="heart" width="512" height="512">
+				<path fill="#c62168" d="
+				M 131.80469 0 C 93.981308 0 62.500055 14.645489 37.361328 43.935547 C 12.453254 73.225596 -4.7369516e-015 109.89691 0 153.94727 C 0 217.83185 30.673788 287.25024 92.021484 362.20508 C 142.06825 423.3221 196.72604 473.2541 255.99805 512 C 315.27003 473.2541 370.04676 423.3221 420.32422 362.20508 C 481.44126 287.48087 512 218.17558 512 154.29102 C 512 110.00996 499.54674 73.225596 474.63867 43.935547 C 449.7306 14.645489 418.36242 9.4739031e-015 380.53906 0 C 330.2616 0 288.74755 25.600844 255.99805 76.800781 C 223.24854 25.600844 181.85147 2.8421709e-014 131.80469 0 z
+				" />
+			</svg>
+		</div>
+		<div class="message">
+			С <span class="eight">8</span> Марта!
+		</div>
+	</body>
+</html>

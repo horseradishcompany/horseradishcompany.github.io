@@ -1,0 +1,230 @@
+/* PARALLAX SCROLLING EXPERIMENT
+   Master Styles
+   Author: Jonathan Nicol (f6design.com)
+*****************************************************************/
+
+
+/* Global reset
+   http://meyerweb.com/eric/tools/css/reset/ 
+*****************************************************************/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Extended base styles (site specific)
+*****************************************************************/
+html { 
+	overflow-y: scroll; /* always force a scrollbar in non-IE */
+	}
+body, html{
+	height: 100%;
+	margin: 0;
+	font: 400 15px/1.8 "Lato", sans-serif;
+	color: #777;
+	background: white;
+}
+h3 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 24px "Lato", sans-serif;
+    color: #fff;
+    text-align: center;
+}
+.preloader-container{
+background: #000;
+overflow: hidden;
+position: fixed;
+left: 0;
+top: 0;
+right:0;
+bottom:0;
+z-index: 100000;
+}
+.preloader {
+animation: preloader-animation 4s infinite ease;
+color: #f80;
+font-size: 2rem;
+text-align: center;
+height: 50px;
+width: 150px;
+position: absolute;
+left: 50%;
+margin-left: -75px;
+top: 50%;
+margin-top: -25px;
+}
+@keyframes preloader-animation{
+0%{
+transform: rotate(0);
+}
+50%{
+transform: rotate(180deg);
+}
+100%{
+transform: rotate(360deg);
+}
+}
+.slide {
+	position: relative;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 400px;
+	opacity: 0.8;
+}
+.slide-start{
+    background-color: white;
+	min-height: 100%;
+	background-image: url("../img/slide-start.png");
+}
+.slide-1{
+    background-image: url("../img/slide-1.png");
+}
+.slide-2{
+    background-image: url("../img/slide-2.png");
+}
+.slide-3{
+    background-image: url("../img/slide-3.png");
+}
+.title {
+    top: 50%;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    font-size: 25px;
+    color: #f7f7f7;
+}
+.more{
+    position: absolute;
+    left: 0%;
+    bottom: 3%;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font: 16px "Lato", sans-serif;
+    color: white;
+}
+.logo {
+    position: absolute;
+    left: 0%;
+    top: -140px;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+.hr-logo {
+    display: block;
+    width: 182px;
+    height: 126px;
+    max-width: 100%;
+    margin: auto;
+    background-image: url("../img/hr_logo.png");
+}
+.copyright-container{
+    bottom: 5%;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    font-size: 25px;
+    color: #f7f7f7;
+}
+.copyright {
+    color: #f7f7f7;
+    position: relative;
+    text-align: center;
+    font-size: 16px;
+    text-decoration: none;
+}
+.controls{
+	position: absolute;
+	left: 0%;
+	bottom: 25%;
+	width: 100%;
+	text-align: center;
+	color: white;
+}
+.control-container {
+    justify-content: center;
+    display: flex;
+}
+.article {
+    position: relative;
+    color: #ddd;
+    background-color: #282e34;
+    padding: 10px 20px;
+    text-align: justify;
+}
+a.button {
+    display: block;
+    width: 267px;
+    height: 63px;
+}
+a.button:hover{
+    background-position: 0px -63px;
+}
+a.getjob-button{
+    background-image: url("../img/getjob-button.png");
+}
+a.telebot-button{
+    background: url("../img/telebot-button.png");
+}
+a.learnmore-button{
+    background: url("../img/learnmore-button.png");
+}
+a.home-button{
+    position: fixed;
+	right: 2px;
+	bottom: 2px;
+	display: block;
+	width: 63px;
+	height: 49px;
+	background: url("../img/home-button.png");
+	z-index:999;
+}
+a.home-button:hover{
+    background-position: 0px -49px;
+}
+@media only screen and (max-device-width:1024px){.slide{background-attachment:scroll;}
+}
